@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="font-monserrat font-bold text-[15px] bg-very-light-grayish-blue flex flex-col justify-center items-center min-h-dvh py-16 md:py-0">
+  <main class="contenedor">
+    <h1 class="text-center">Our Pricing</h1>
+
+    <div class="flex justify-center items-center gap-4 mt-5">
+      <p>Annualy</p>
+      <label class="monthly switch cursor-pointer hover:opacity-50 transition-all duration-200">
+        <input id="pricing" type="checkbox">
+        <span class="slider"></span>
+      </label>
+      <p>Monthly</p>
+    </div>
+
+    <div class="grid grid-rows-3 gap-7 mt-16 md:grid-cols-3 md:grid-rows-1 md:mt-12 md:gap-0 md:items-center">
+      <div class="card flex flex-col items-center gap-5 p-7 bg-white rounded-md shadow-lg md:h-[93%]">
+        <p class="title text-grayish-blue-hsl">Basic</p>
+        <h2 class="text-dark-grayish-blue text-4xl flex items-center gap-2">
+          &dollar;
+          <span class="price text-7xl">19.99</span>
+        </h2>
+
+        <div class="w-full text-center my-3">
+          <p class="text-grayish-blue-hsl border-y-[1px] border-light-grayish-blue py-3">500 GB Storages</p>
+          <p class="text-grayish-blue-hsl py-3">2 Users Allowed</p>
+          <p class="text-grayish-blue-hsl border-y-[1px] border-light-grayish-blue py-3">Send up to 3 GB</p>
+        </div>
+
+        <a href="#" class="w-full text-center bg-linear-to-r from-grayish-blue to-pale-blue py-2.5 uppercase text-very-light-grayish-blue rounded-md tracking-widest enlace hover:bg-none hover:border-[1px] hover:border-grayish-blue-hsl hover:text-pale-blue transition-colors duration-200">Learn More</a>
+      </div>
+
+      <div class="card flex flex-col items-center gap-5 p-7 bg-linear-to-br from-grayish-blue to-pale-blue rounded-md shadow-lg md:py-11">
+        <p class="title text-very-light-grayish-blue">Professional</p>
+        <h2 class="text-very-light-grayish-blue text-4xl flex items-center gap-2">
+          &dollar;
+          <span class="price text-7xl">24.99</span>
+        </h2>
+
+        <div class="w-full text-center my-3">
+          <p class="text-very-light-grayish-blue border-y-[1px] border-light-grayish-blue py-3">1 TB Storage</p>
+          <p class="text-very-light-grayish-blue py-3">5 Users Allowed</p>
+          <p class="text-very-light-grayish-blue border-y-[1px] border-light-grayish-blue py-3">Send up to 10 GB</p>
+        </div>
+
+        <a href="#" class="w-full text-center bg-very-light-grayish-blue py-2.5 uppercase text-pale-blue rounded-md tracking-widest hover:bg-transparent border-[1px] border-very-light-grayish-blue hover:text-very-light-grayish-blue transition-colors duration-200 ">Learn More</a>
+      </div>
+
+      <div class="card flex flex-col items-center gap-5 p-7 bg-white rounded-md shadow-lg md:h-[93%]">
+        <p class="title text-grayish-blue-hsl">Master</p>
+        <h2 class="text-dark-grayish-blue text-4xl flex items-center gap-2">&dollar;
+          <span class="price text-7xl">39.99</span>
+        </h2>
+
+        <div class="w-full text-center my-3">
+          <p class="text-grayish-blue-hsl border-y-[1px] border-light-grayish-blue py-3">2 TB Storage</p>
+          <p class="text-grayish-blue-hsl py-3">10 Users Allowed</p>
+          <p class="text-grayish-blue-hsl border-y-[1px] border-light-grayish-blue py-3">Send up to 20 GB</p>
+        </div>
+
+        <a href="#" class="w-full text-center bg-linear-to-r from-grayish-blue to-pale-blue py-2.5 uppercase text-very-light-grayish-blue rounded-md tracking-widest enlace hover:bg-none hover:border-[1px] hover:border-grayish-blue-hsl hover:text-pale-blue transition-colors duration-200">Learn More</a>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="contenedor md:absolute md:bottom-4"> 
+    <div class="text-center mt-5 md:mt-0 text-dark-grayish-blue">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-pale-blue">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/jorgecb10" class="text-pale-blue">Jorge Carranza</a>.
+    </div>
+  </footer>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
